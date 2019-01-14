@@ -1,4 +1,4 @@
-rg          = "ig2018pnwrider"
+rg          = "pnwrider"
 loc         = "eastus2"
 tags        = {
     app     = "Ghost"

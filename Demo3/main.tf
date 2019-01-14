@@ -1,4 +1,4 @@
-resource "azurerm_resource_group" "ig2018-rg" {
+resource "azurerm_resource_group" "rg" {
     name                    = "${var.rg}"
     location                = "${var.loc}"
     tags                    = "${var.tags}"

@@ -1,8 +1,8 @@
 resource "azurerm_container_group" "ghost" {
     name                        = "ghost"
     location                    = "${var.loc}"
-    resource_group_name         = "${azurerm_resource_group.ig2018-rg.name}"
-    dns_name_label              = "ig2018pnwrider"
+    resource_group_name         = "${azurerm_resource_group.rg.name}"
+    dns_name_label              = "pnwrider"
     ip_address_type             = "public"
     os_type                     = "linux"
     tags                        = "${var.tags}"
@@ -12,6 +12,7 @@ resource "azurerm_container_group" "ghost" {
         image                   = "ghost:alpine"
         cpu                     = "0.5"
         memory                  = "1.0"
+        port                    = 2368
     }
 
     container {

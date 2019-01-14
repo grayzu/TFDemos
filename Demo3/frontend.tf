@@ -2,7 +2,7 @@ resource "azurerm_container_group" "ghost" {
     name                        = "ghost"
     location                    = "${var.loc}"
     resource_group_name         = "${azurerm_resource_group.ig2018-rg.name}"
-    dns_name_label              = "ig2018pnwrider"
+    dns_name_label              = "pnwrider"
     ip_address_type             = "public"
     os_type                     = "linux"
     tags                        = "${var.tags}"
